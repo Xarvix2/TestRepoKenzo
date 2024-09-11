@@ -1,7 +1,7 @@
 const btn = document.getElementById("btn");
 const mainTitle = document.getElementById("main-title");
 
-function handleClick(e) {
+function handleClick() {
     console.log("cliquer...");
     mainTitle.textContent = "Titre modifié après clic !"; 
 }
