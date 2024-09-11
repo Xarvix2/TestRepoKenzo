@@ -1,13 +1,10 @@
-const btn = document.getElementById("btn")
+const btn = document.getElementById("btn");
+const mainTitle = document.getElementById("main-title");
 
-
-const handleClick = () => {
-    console.log("cliquer...")
+function handleClick(e) {
+    console.log("cliquer...");
+    mainTitle.textContent = "Titre modifié après clic !"; // Changer le titre ici
 }
 
-btn.addEventListener("click",function() {
-    console.log("cliquer !")
-})
-
-
-console.log("test ...",btn)
+btn.addEventListener("click", handleClick); // Correction de l'addEventListener
+console.log("test ...", btn);
